@@ -82,7 +82,7 @@ public class FASTAReaderSuffixes extends FASTAReader {
 		// TODO
 		List<Integer> posiciones = new ArrayList<Integer>();
 		int lo = 0;
-		int hi = validBytes;
+		int hi = this.suffixes.length;
 		return posiciones;
 	}
 
