@@ -83,6 +83,9 @@ public class FASTAReaderSuffixes extends FASTAReader {
 		List<Integer> posiciones = new ArrayList<Integer>();
 		int lo = 0;
 		int hi = this.suffixes.length;
+		while(lo <= hi) {
+			
+		}
 		return posiciones;
 	}
 
