@@ -178,7 +178,7 @@ public class FASTAReader {
 	 *         pattern in the data.
 	 */
 	public List<Integer> search(byte[] pattern) {
-		List<Integer> posiciones = new ArrayList<Integer>();
+		List<Integer> posiciones = new ArrayList<>();
 		for(int i = 0; i < validBytes - pattern.length; i++) {
 			try {
 				//if(compare(pattern,i)) { //O(n*m) siendo n el tamaño del cromosoma y m el tamaño de pattern
@@ -205,7 +205,7 @@ public class FASTAReader {
 	 *         pattern (with up to 1 errors) in the data.
 	 */
 	public List<Integer> searchSNV(byte[] pattern) {
-		List<Integer> posiciones = new ArrayList<Integer>();
+		List<Integer> posiciones = new ArrayList<>();
 		for(int i = 0; i < validBytes - pattern.length; i++) {
 			try {
 				if(compareNumErrors(pattern,i) == 0 || compareNumErrors(pattern,i) == 1) { //O(n*m)
